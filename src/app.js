@@ -52,3 +52,20 @@ document.querySelector("#newCard").addEventListener("click", function() {
   document.querySelector(".card").classList.add(randomSuitGen());
   document.querySelector(".number").innerHTML = randomNumberGen();
 });
+
+let inputHeight = document.querySelector("#cardHeight");
+let inputWidth = document.querySelector("#cardWidth");
+let card = document.querySelector(".card");
+
+document.querySelector("#sizeSubmit").addEventListener("click", function() {
+  if (inputHeight == null) {
+    card.style.height = "400px";
+  } else {
+    card.style.height = inputHeight.value + "px";
+  }
+  if (inputWidth == null) {
+    card.style.width = "240px";
+  } else {
+    card.style.width = inputWidth.value + "px";
+  }
+});

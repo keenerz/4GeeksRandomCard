@@ -23,31 +23,33 @@
         <span class="number"></span>
       </div>
       <div class="row" id="buttondiv">
-        <button class="button col-2 m-auto" id="newCard">
+        <button class="button" id="newCard">
           Show me new card!
         </button>
       </div>
       <div class="row text-center">
-        <form class="col-3" id="inputs">
-          <label for="cardHeight">Set Card Height:</label><br />
-          <input
-            type="text"
-            id="cardHeight"
-            name="cardHeight"
-            placeholder="Height in px"
-          />
-          <label for="cardWidth">Set Card Width:</label>
-          <input
-            type="text"
-            id="cardWidth"
-            name="cardWidth"
-            placeholder="Width in px"
-          />
-          <br />
-          <button class="button" id="sizeSubmit">
-            Submit Size
-          </button>
-        </form>
+        <div class="col-3" id="inputs">
+          <form>
+            <label for="cardHeight">Set Card Height:</label><br />
+            <input
+              type="text"
+              id="cardHeight"
+              name="cardHeight"
+              placeholder="Height in px"
+            />
+            <label for="cardWidth">Set Card Width:</label>
+            <input
+              type="text"
+              id="cardWidth"
+              name="cardWidth"
+              placeholder="Width in px"
+            />
+            <br />
+            <button type="button" class="button" id="sizeSubmit">
+              Submit Size
+            </button>
+          </form>
+        </div>
       </div>
     </div>
     <script

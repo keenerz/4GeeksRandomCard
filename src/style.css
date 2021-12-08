@@ -51,9 +51,13 @@ body {
   margin-bottom: 10px;
   padding: 5px;
   border: 1px solid black;
+  height: 170px;
+  width: 200px;
 }
 #buttondiv {
+  margin: auto;
   margin-top: 10px;
+  width: 180px;
 }
 #sizeSubmit {
   margin-top: 5px;
