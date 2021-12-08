@@ -1,1 +1,60 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+.card {
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  height: 400px;
+  width: 240px;
+  border: 1px solid black;
+}
+.card:before {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  font-size: 70px;
+}
+.card:after {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  font-size: 70px;
+}
+.number {
+  font-size: 80px;
+  margin: auto;
+}
+.card.spade:before,
+.card.spade:after {
+  content: "♠";
+}
+.card.club:before,
+.card.club:after {
+  content: "♣";
+}
+.card.heart:before,
+.card.heart:after {
+  content: "♥";
+  color: red;
+}
+.card.diamond:before,
+.card.diamond:after {
+  content: "♦";
+  color: red;
+}
+#inputs {
+  background: white;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+#buttondiv {
+  margin-top: 10px;
+}
+#sizeSubmit {
+  margin-top: 5px;
+}
